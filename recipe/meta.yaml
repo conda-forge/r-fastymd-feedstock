@@ -1,4 +1,4 @@
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fastymd_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fastymd/fastymd_{{ version }}.tar.gz
-  sha256: f09e5c3683522d3180c4bc235a6bef8ae9f130f8ac91696c63a5d202b84a6c62
+  sha256: 549bb86d332492ff7584a7c7a7e2e154fe502fd5cf8c68f91466033916a0b31f
 
 build:
   number: 0
@@ -47,8 +47,8 @@ about:
   home: https://timtaylor.codeberg.page/fastymd/
   dev_url: https://codeberg.org/TimTaylor/fastymd
   license: GPL-3.0-only
-  summary: A collection of utility functions for working with Year Month Day objects. Includes functions for fast parsing of numeric and character input based on algorithms described in Hinnant, H. (2021) <https://howardhinnant.github.io/date_algorithms.html> as well as a branchless calculation of leap years by Jerichaux
-    (2025) <https://stackoverflow.com/a/79564914>.
+  summary: A collection of utility functions for working with Year Month Day objects. Includes functions for fast parsing of numeric and character input based on algorithms described in Hinnant, H. (2021) <https://howardhinnant.github.io/date_algorithms.html> as well as a branchless calculation of leap years by 
+    Jerichaux (2025) <https://stackoverflow.com/a/79564914>.
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'

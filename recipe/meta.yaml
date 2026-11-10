@@ -1,4 +1,4 @@
-{% set version = "0.1.5" %}
+{% set version = "0.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fastymd_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fastymd/fastymd_{{ version }}.tar.gz
-  sha256: 549bb86d332492ff7584a7c7a7e2e154fe502fd5cf8c68f91466033916a0b31f
+  sha256: 740da0f1341f27b9e32eb0ba26476f727413348da78ca66347b4eb3b0deef628
 
 build:
   number: 0
